@@ -1,0 +1,34 @@
+{
+  "name": "heelboy.co",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "browserify -t reactify scripts/index.js -o index.js -v",
+    "css": "node-sass ./styles/style.scss | postcss --use autoprefixer -o style.css",
+    "watch:js": "watch 'npm run js' scripts/",
+    "watch:css": "watch 'npm run css' styles/",
+    "watch": "parallelshell 'npm run watch:js' 'npm run watch:css'",
+    "build": "npm run js && npm run css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.3",
+    "browserify": "^13.0.0",
+    "express": "^4.13.4",
+    "moment": "^2.13.0",
+    "node-sass": "^3.5.3",
+    "parallelshell": "^2.0.0",
+    "postcss": "^5.0.19",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-transform": "^1.0.0",
+    "watch": "^0.17.1",
+    "watchify": "^3.7.0"
+  }
+}

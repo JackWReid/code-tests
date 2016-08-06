@@ -1,0 +1,82 @@
+@import 'lib',
+        'global';
+
+.app--begin{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-area-primary;
+}
+
+.begin-module{
+  padding: 20px;
+  background-color: $c-white;
+  border: 1px $c-bord solid;
+  border-radius: $m-round;
+}
+
+  .begin-module__title{
+    margin-top: 0;
+    font-weight: 100;
+  }
+
+
+
+.app{
+  height: 100%;
+  display: flex;
+}
+
+.user-activity{
+  order: 1;
+  flex: 3;
+  background-color: $c-area-primary;
+}
+
+.user-profile{
+  order: 2;
+  flex: 1;
+  padding: 20px;
+  background-color: $c-area-secondary;
+}
+
+
+
+.user-activity__title{
+  font-weight: 100;
+}
+
+.activity-list{
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: $c-white;
+  border-radius: $m-round;
+  border: 1px $c-bord solid;
+  list-style: none;
+}
+
+  .activity-list__item{
+    display: flex;
+    margin: 2em 0;
+  }
+
+    .activity-list__item__time{
+      width: 10em;
+      margin-right: 1em;
+    }
+
+
+.bar-wrapper{
+  width: 500px;
+  height: 20px;
+  display: flex;
+}
+
+  .empty-bar-fill{
+    height: 100%;
+    background-color: red;
+    flex-grow: 1;
+  }

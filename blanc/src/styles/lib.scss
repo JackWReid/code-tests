@@ -1,0 +1,64 @@
+$c-black: #1a191b;
+$c-white: #FFF;
+$c-grey-deep: #313033;
+$c-grey-shallow: #ddd;
+$c-grey-sub: #d1d1d1;
+
+$f-header: 'Roboto Slab', serif;
+$f-main: 'AccordThin', sans-serif;
+
+$fs-godlike-rumble: 8em;
+$fs-hero-roar: 3em;
+$fs-section-shout: 2em;
+$fs-hefty-intro: 1.5em;
+$fs-teeny-tags: .8em;
+
+$m-content-column: 1280px;
+$m-big-round: 20px;
+
+$tr-quick: all .2s ease-in-out;
+
+@mixin mute-link{
+	text-decoration: none;
+	color: inherit;
+}
+
+@mixin leading-button{
+	@include mute-link;
+	display: block;
+	margin: 3px 0;
+	padding: 5px 10px;
+	text-align: center;
+	color: $c-black;
+	background-color: $c-white;
+	border: 1px $c-grey-shallow solid;
+	border-radius: $m-big-round;
+}
+
+@mixin slab-interact-section{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	a{
+		display: block;
+	}
+}
+
+@mixin slab-has-inner{
+	&__inner{
+    max-width: $m-content-column;
+    margin: 0 auto;
+	}
+}
+
+@font-face {
+    font-family: 'AccordThin';
+    src: url('./fonts/AccordThin-webfont.eot');
+    src: url('./fonts/AccordThin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/AccordThin-webfont.woff') format('woff'),
+         url('./fonts/AccordThin-webfont.ttf') format('truetype'),
+         url('./fonts/AccordThin-webfont.svg#AccordThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
