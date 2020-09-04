@@ -20,7 +20,7 @@
     "browserify": "^13.0.0",
     "express": "^4.13.4",
     "moment": "^2.13.0",
-    "node-sass": "^3.5.3",
+    "node-sass": "^4.14.1",
     "parallelshell": "^2.0.0",
     "postcss": "^5.0.19",
     "react": "^0.14.8",
